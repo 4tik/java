@@ -21,5 +21,20 @@ public class Condition {
             System.out.println(city);
         }
 
+        System.out.println("## Leap Year Example:");
+
+        int year = 2020;
+        if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+            System.out.println("LEAP YEAR");
+        } else {
+            System.out.println("COMMON YEAR");
+        }
+
+        System.out.println("Using Ternary Operator");
+        int number = 13;
+        // Using ternary operator
+        String output = (number % 2 == 0) ? "even number" : "odd number";
+        System.out.println(output);
+
     }
 }
